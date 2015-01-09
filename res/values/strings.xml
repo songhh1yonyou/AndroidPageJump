@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidPageJump</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="mesg1">Press the button to get an activity result,which will be display here:</string>
+    <string name="btn1">Get Result</string>
+    <string name="btn2">Corky</string>
+    <string name="btn3">Violet</string>
+    <string name="mesg2">Pick a result to send ,or back to cancle.</string>
+
+</resources>
