@@ -12,6 +12,7 @@ public class SendResultActivity extends Activity {
 
 	private Button rst1;
 	private Button rst2;
+	private final static int RESULTCODE_TEST = -1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +31,15 @@ public class SendResultActivity extends Activity {
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-
-			setResult(RESULT_OK, (new Intent()).setAction("Corky!"));
+			// 返回参数
+			Intent it = new Intent();
+			it.putExtra("data", "1233344");
+			setResult(RESULTCODE_TEST, it);
 			finish();
+
+			// 动作类型：
+			// setResult(RESULT_OK, (new Intent()).setAction("Corky!"));
+			// finish();
 
 		}
 
@@ -42,8 +49,15 @@ public class SendResultActivity extends Activity {
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
-			setResult(RESULT_OK, (new Intent()).setAction("Violet!"));
+			Intent it = new Intent();
+			it.putExtra("data", "6768888888");
+			setResult(RESULTCODE_TEST, it);
 			finish();
+
+			// 动作类型：
+			// setResult(RESULT_OK, (new Intent()).setAction("Violet!"));
+			// finish();
+
 		}
 
 	};
