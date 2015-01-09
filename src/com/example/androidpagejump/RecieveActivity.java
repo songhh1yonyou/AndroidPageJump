@@ -50,7 +50,7 @@ public class RecieveActivity extends Activity {
 			
 		//	TextView text = (TextView) reciveText.getText();
 			TextView text =reciveText;
-			if (requestCode == RESULT_CANCELED) {
+			if (resultCode == RESULT_CANCELED) {
 				text.append("(cancle)");
 			} else {
 				text.append("(okay");
